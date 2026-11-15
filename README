@@ -1,0 +1,19 @@
+# Daily Money Gap backend
+
+Requirements: Node.js 18+.
+
+1. Put your existing `index.html` and `style.css` in this folder.
+2. Replace the old `script.js` with the included API-connected `script.js`.
+3. Open this folder in VS Code Terminal.
+4. Run `npm install`
+5. Run `npm start`
+6. Open http://localhost:3000 in your browser. Do not open index.html directly.
+
+API:
+- GET /api/health
+- GET /api/dashboard
+- PUT /api/income with JSON `{"income":25000}`
+- POST /api/expenses with JSON `{"name":"Groceries","amount":1200,"category":"Needs"}`
+- DELETE /api/expenses/:id
+
+SQLite database file is created automatically. This is a single-user local demo backend, not a production-ready system. It has no OTP, account authentication, cloud sync, or bank integration. Add authentication and security before storing real financial information.
